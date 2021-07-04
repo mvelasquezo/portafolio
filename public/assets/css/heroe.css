@@ -1,0 +1,129 @@
+.heroe {
+    padding-block-start: 16px;
+}
+
+.heroe-imagen {
+    text-align: center;
+    overflow: hidden;
+}
+
+.heroe-imagen img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.heroe h1 {
+    margin: 0;
+    font: var(--headL3);
+}
+
+
+/*::nth-of-type(1)*/
+
+.heroe h1 span:first-child {
+    font: var(--headL5);
+    display: block;
+}
+
+.heroe-descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.heroe-descripcion p.txt-justificado {
+    text-align: justify;
+}
+
+.section-altura-completa {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-arco-iris {
+    display: grid;
+    top: 0;
+    left: 0;
+    /*width: 100vw;*/
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Sacramento", cursive;
+    color: #fff;
+    background: #333;
+    background-image: radial-gradient(ellipse at bottom left, #00a3cb 40%, rgba(0, 163, 203, 0) 40%), radial-gradient(ellipse at top right, #00a3cb 30%, rgba(0, 163, 203, 0) 30%), linear-gradient(to right, #625793 0%, #625793 33%, #d55d64 33%, #d55d64 66%, #e49129 66%);
+    background-size: 50% 100%;
+}
+
+.img-bor-rad {
+    border-radius: 50%;
+}
+
+.mensaje-personal-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+}
+
+.mensaje-personal-contenido p {
+    color: var(--morado);
+    margin: 0;
+}
+
+.mensaje-personal-contenido p:first-child {
+    font: var(--regular);
+}
+
+.mensaje-personal-contenido p:nth-of-type(2) {
+    font: var(--regular);
+    font-weight: bold;
+}
+
+.mensaje-personal-contenido a {
+    display: flex;
+    justify-content: center;
+}
+
+.mensaje-personal-contenido a path {
+    fill: var(--morado);
+}
+
+@media screen and (max-width: 480px) {
+    .mensaje-personal-contenido p:first-child {
+        /*font-size: 18px;*/
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heroe {
+        display: flex;
+        gap: 32px;
+    }
+    .heroe-descripcion {
+        order: 1;
+        max-inline-size: 450px;
+    }
+    .heroe-imagen {
+        order: 2;
+        flex: 1;
+        text-align: end;
+    }
+    .mensaje-personal-contenido p:first-child {
+        font: var(--texto);
+    }
+    .mensaje-personal-contenido p:nth-of-type(2) {
+        font: var(--headL5);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroe-imagen img {
+        inline-size: 400px;
+        /*block-size: 504px;*/
+    }
+}

@@ -1,0 +1,27 @@
+.frm-hablemos.apa input,
+.frm-hablemos.apa textarea {
+    font: var(--body1);
+    border: solid 2px var(--gris);
+    border-radius: 8px;
+}
+
+.frm-hablemos.apa label {
+    font: var(--boton);
+}
+
+.frm-hablemos p {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.frm-hablemos.apa input:focus,
+.frm-hablemos.apa textarea:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .frm-hablemos.apa .titulo {
+        align-self: stretch;
+        text-align: center;
+    }
+}

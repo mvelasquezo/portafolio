@@ -1,0 +1,38 @@
+.boton.apa {
+    background-color: var(--morado);
+    color: var(--blanco);
+    font: var(--boton);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.apa.bor-rad4 {
+    border-radius: 4px;
+}
+
+.boton.apa.uc {
+    text-transform: uppercase;
+}
+
+.boton.apa.man {
+    cursor: pointer;
+}
+
+.boton.apa.es-sec {
+    background-color: unset;
+    border: solid 2px var(--morado);
+    color: var(--morado);
+}
+
+.boton-icon.apa {
+    background-color: var(--blanco);
+    padding: 10px;
+    border: solid 2px var(--morado);
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-icon img {
+    vertical-align: middle;
+}

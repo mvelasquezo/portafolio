@@ -1,0 +1,8 @@
+@import "titulo-apa.css";
+.titulo {
+    align-self: flex-start;
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+}

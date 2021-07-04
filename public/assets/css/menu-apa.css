@@ -1,0 +1,14 @@
+.menu.apa ul {
+    list-style: none;
+}
+
+.menu.apa ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font: var(--boton);
+    text-transform: uppercase;
+}
+
+.menu.apa ul li a.esta-activo {
+    color: var(--morado);
+}

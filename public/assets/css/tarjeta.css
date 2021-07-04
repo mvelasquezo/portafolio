@@ -1,0 +1,37 @@
+@import "./tarjeta-apa.css";
+.tarjeta {
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.img-container.mini-foto {
+    max-width: 80px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.img-container.testimonio {
+    max-width: 420px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.square {
+    width: 50%;
+    max-width: 80px;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}

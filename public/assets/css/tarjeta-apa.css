@@ -1,0 +1,35 @@
+.tarjeta.apa {
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /*text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);*/
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+
+.tarjeta-p1.apa {
+    font: var(--texto2);
+    opacity: 50%;
+}
+
+.tarjeta-remitente.apa {
+    font: var(--caption) !important;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.tarjeta-remitente.apa.txt-trns-none {
+    text-transform: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    .tarjeta-p1.apa {
+        font: var(--texto);
+    }
+    .tarjeta-remitente.apa {
+        font: var(--headL5) !important;
+        font-size: 18px !important;
+    }
+}

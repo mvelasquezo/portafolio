@@ -1,0 +1,14 @@
+@import "./boton-apa.css";
+.boton {
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    display: inline-block;
+}
+
+.boton.es-sec {}
+
+.boton-icon {
+    display: inline-block;
+}

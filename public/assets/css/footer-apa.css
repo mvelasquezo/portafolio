@@ -1,0 +1,9 @@
+.footer-content.apa,
+.footer-hecho-por svg path {
+    color: var(--blanco);
+    fill: var(--blanco);
+}
+
+.footer-content.apa {
+    text-align: center;
+}

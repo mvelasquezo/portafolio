@@ -1,0 +1,30 @@
+@import "form-apa.css";
+.frm-hablemos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-inline-size: 540px;
+    margin: 0 auto;
+}
+
+.frm-hablemos {
+    margin-block-end: 80px;
+}
+
+.frm-hablemos label {
+    display: flex;
+    flex-direction: column;
+}
+
+.frm-hablemos .titulo {
+    margin: 0;
+}
+
+.frm-hablemos input,
+.frm-hablemos textarea {
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    margin-block-start: 8px;
+}
