@@ -65,6 +65,7 @@ let jsIndex = function() {
     let fn = {};
 
     fn.init = ( self ) => {
+
         jsBase.$( 'frm-hablemos' )?.on( 'submit', ( evt ) => {
             self.handleSubmit( evt );
         });
@@ -81,6 +82,18 @@ let jsIndex = function() {
                 a.classList.add( 'esta-activo' ); 
             });
         });
+
+
+        let url = window.location.href;
+        let tag = url.match(/^[^#]*#(.*)/);
+        let proy = (tag)?tag[ 1 ]:null;
+
+        if( null != proy ) {
+            enlaces.forEach( enl => {
+                enl.classList.remove( 'esta-activo' );
+            });
+            jsBase.$$( 'js-proyecto' ).classList.add( 'esta-activo' );
+        }
     };
 
     fn.handleSubmit = function( evt ) {
