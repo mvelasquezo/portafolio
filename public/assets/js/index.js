@@ -83,7 +83,6 @@ let jsIndex = function() {
             });
         });
 
-
         let url = window.location.href;
         let tag = url.match(/^[^#]*#(.*)/);
         let proy = (tag)?tag[ 1 ]:null;
