@@ -1,1 +1,3 @@
-.header.apa {}
+.header.apa {
+    backdrop-filter: blur(10px);
+}

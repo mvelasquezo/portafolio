@@ -10,7 +10,3 @@
     align-items: center;
     block-size: 80px;
 }
-
-.header.apa {
-    backdrop-filter: blur(10px);
-}
